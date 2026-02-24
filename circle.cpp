@@ -9,8 +9,6 @@ void loop_shape(int total_steps, int radius, double offset) {
 
     int i = 0;
     while (i <= total_steps){
-
-        
         double theta = (i / (double)total_steps) * 2.0 * PI + offset;
 
         double x = radius * std::cos(theta);
