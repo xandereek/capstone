@@ -2,7 +2,6 @@
 
 This is my Senior Capstone, aiming to measure the performance differences between C++ and Python across various algorithms. Specifically, it tests trigonometric functions through circle calculation, the naive Fibonacci sequence, and fast Fibonacci (fast doubling).
 
----
 
 ## Key findings
 
@@ -23,3 +22,25 @@ In all cases, C++ outperformed Python by a substantial margin. For algorithms li
 
 ![benchmark_fib_fast.png](benchmark_fib_fast.png)
 *Fast Fibonacci is orders of magnitude quicker than the naive algorithm, making Python perfectly viable in situations where a few milliseconds don't count.*
+
+## How to run
+
+### C++
+
+>[!IMPORTANT]
+>This project was developed and tested entirely on macOS. Depending on your compiler and environment, the C++ code may require modifications to compile successfully on Windows
+
+First, compile the circle C++ using the following command:
+```bash
+clang++ -o circle circle.cpp
+```
+
+Then for the Fibonacci files, use the following command instead:
+```bash
+clang++ g++ fast_fibonacci -o fast_fibonacci.cpp -lgmp -lgmpxx
+```
+### Python
+Python is easy and will run crossplatform just run (changing the file name as needed):
+```bash
+python3 circle.py
+```
