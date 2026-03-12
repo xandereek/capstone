@@ -30,7 +30,7 @@ Before compiling or running the code make sure you have the following dependenci
 ### C++
 Fibonacci will cause overflow really quickly, therefore the code relies on the **GMP** (GNU Multiple Precision Arithmetic) library.
 
-**macOS (Reccomended)**
+**macOS (Recommended)**
 You can install this easily via Homebrew:
 ```bash
 brew install gmp
@@ -57,14 +57,14 @@ clang++ -o circle circle.cpp
 
 Then for the Fibonacci files, use the following command instead:
 ```bash 
-clang++ fast_fibonacci-o fast_fibonacci.cpp -lgmp -lgmpxx
+clang++ -o fast_fibonacci fast_fibonacci.cpp -lgmp -lgmpxx
 ```
 
 >[!NOTE]
 >These files are intentionally compiled without optimization flags to stop dead-code elimination, ensuring we are actually measuring the performance of the function.
 
 ### Python
-Python is easy and will run crossplatform just run (changing the file name as needed):
+Python is easy and will run cross-platform. Just run (changing the file name as needed):
 ```bash
 python3 circle.py
 ```
