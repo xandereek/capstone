@@ -37,7 +37,7 @@ clang++ -o circle circle.cpp
 
 Then for the Fibonacci files, use the following command instead:
 ```bash
-clang++ g++ fast_fibonacci -o fast_fibonacci.cpp -lgmp -lgmpxx
+clang++ fast_fibonacci-o fast_fibonacci.cpp -lgmp -lgmpxx
 ```
 ### Python
 Python is easy and will run crossplatform just run (changing the file name as needed):
