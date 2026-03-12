@@ -23,6 +23,26 @@ In all cases, C++ outperformed Python by a substantial margin. For algorithms li
 ![benchmark_fib_fast.png](benchmark_fib_fast.png)
 *Fast Fibonacci is orders of magnitude quicker than the naive algorithm, making Python perfectly viable in situations where a few milliseconds don't count.*
 
+## Dependencies
+
+Before compiling or running the code make sure you have the following dependencies installed:
+
+### C++
+Fibonacci will cause overflow really quickly, therefore the code relies on the **GMP** (GNU Multiple Precision Arithmetic) library.
+
+**macOS (Reccomended)**
+You can install this easily via Homebrew:
+```bash
+brew install gmp
+```
+
+### Python
+
+You will need Python 3 installed, along with the following packages, which can be installed through the following command:
+```bash
+pip install matplotlib pandas
+```
+
 ## How to run
 
 ### C++
@@ -36,7 +56,7 @@ clang++ -o circle circle.cpp
 ```
 
 Then for the Fibonacci files, use the following command instead:
-```bash
+```bash 
 clang++ fast_fibonacci-o fast_fibonacci.cpp -lgmp -lgmpxx
 ```
 
