@@ -41,7 +41,7 @@ clang++ fast_fibonacci-o fast_fibonacci.cpp -lgmp -lgmpxx
 ```
 
 >[!NOTE]
->These files are intentionally compiled without optimization flags to stop dead-code elimination, ensuring we are actually measuring the performance of the function
+>These files are intentionally compiled without optimization flags to stop dead-code elimination, ensuring we are actually measuring the performance of the function.
 
 ### Python
 Python is easy and will run crossplatform just run (changing the file name as needed):
